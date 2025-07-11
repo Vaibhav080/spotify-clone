@@ -44,13 +44,6 @@ Thumbs.db
 *.tsbuildinfo
 
 # ========================
-# Optional: lock files
-# Uncomment below if you don’t want to commit lock files
-# package-lock.json
-# yarn.lock
-# pnpm-lock.yaml
-
-# ========================
 # Git
 # ========================
 .git/
