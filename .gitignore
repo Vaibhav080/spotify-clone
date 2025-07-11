@@ -1,0 +1,56 @@
+# ========================
+# Node.js (Backend)
+# ========================
+node_modules/
+tmp/
+.env
+.env.local
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ========================
+# Frontend (Vite / React)
+# ========================
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+frontend/.cache/
+frontend/.vite/
+frontend/.next/  # in case using Next.js
+frontend/.turbo/
+frontend/*.local
+frontend/*.tsbuildinfo
+
+# ========================
+# Build Outputs (General)
+# ========================
+dist/
+build/
+
+# ========================
+# OS & Editor Files
+# ========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ========================
+# TypeScript
+# ========================
+*.tsbuildinfo
+
+# ========================
+# Optional: lock files
+# Uncomment below if you don’t want to commit lock files
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ========================
+# Git
+# ========================
+.git/
