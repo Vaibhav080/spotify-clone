@@ -3,24 +3,28 @@ import { Loader } from "lucide-react"
 import { useNavigate } from "react-router-dom";
 import { useUser } from "@clerk/clerk-react";
 import { axiosInstance } from "@/lib/axios";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 
 const AuthCallbackPage = () => {
 
   const { isLoaded, user } = useUser();
   const navigate= useNavigate();
+  const syncAttempted = useRef(false);
 
   useEffect(() => {
     const syncUser = async ()=> {
       try{
-        if (!isLoaded || !user) return;
+        if (!isLoaded || !user || syncAttempted.current) return;
+        syncAttempted.current = true
+
         await axiosInstance.post("/auth/callback", {
           id:user.id,
           firstName: user.firstName,
           lastName: user.lastName,
           imageUrl: user.imageUrl,
-        })
+        });
+
     } catch (error) {
       console.log("Error in auth-callback", error);
     } finally{
