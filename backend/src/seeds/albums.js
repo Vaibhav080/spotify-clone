@@ -29,7 +29,7 @@ const seedDatabase = async () => {
             {
                 title: "Heat Waves",
                 artist: "Glass Animals",
-                imageUrl: "/cover-images/2.jpg",
+                imageUrl: "/cover-images/2.png",
                 audioUrl: "/songs/2.mp3",
                 plays: Math.floor(Math.random() * 5000),
                 duration: 41, // seconds
@@ -74,7 +74,7 @@ const seedDatabase = async () => {
             {
                 title: "Shinunoga E-Wa",
                 artist: "Fujii Kaze",
-                imageUrl: "/cover-images/7.jpg",
+                imageUrl: "/cover-images/7.png",
                 audioUrl: "/songs/7.mp3",
                 plays: Math.floor(Math.random() * 5000),
                 duration: 42, // seconds 
@@ -110,7 +110,7 @@ const seedDatabase = async () => {
             {
                 title: "Dandelions",
                 artist: "Ruth B",
-                imageUrl: "/cover-images/11.jpg",
+                imageUrl: "/cover-images/11.png",
                 audioUrl: "/songs/11.mp3",
                 plays: Math.floor(Math.random() * 5000),
                 duration: 42, // seconds 
@@ -146,7 +146,7 @@ const seedDatabase = async () => {
             {
                 title: "Lahore",
                 artist: "Guru Randhawa",
-                imageUrl: "/cover-images/15.jpg",
+                imageUrl: "/cover-images/15.jpeg",
                 audioUrl: "/songs/15.mp3",
                 plays: Math.floor(Math.random() * 5000),
                 duration: 42, // seconds 
@@ -164,7 +164,7 @@ const seedDatabase = async () => {
             {
                 title: "Night Changes",
                 artist: "One Direction",
-                imageUrl: "/cover-images/17.jpg",
+                imageUrl: "/cover-images/17.png",
                 audioUrl: "/songs/17.mp3",
                 plays: Math.floor(Math.random() * 5000),
                 duration: 42, // seconds 
@@ -173,7 +173,7 @@ const seedDatabase = async () => {
             {
                 title: "Sweet but Psycho",
                 artist: "Ava Max",
-                imageUrl: "/cover-images/18.jpg",
+                imageUrl: "/cover-images/18.png",
                 audioUrl: "/songs/18.mp3",
                 plays: Math.floor(Math.random() * 5000),
                 duration: 42, // seconds 

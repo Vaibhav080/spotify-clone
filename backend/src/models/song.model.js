@@ -26,7 +26,7 @@ const songSchema = new mongoose.Schema({
         ref: 'Album',
         required: false
     }
-}, {timestamp: true}
+}, {timestamps: true}
 );
 
 export const Song = mongoose.model("Song", songSchema);
