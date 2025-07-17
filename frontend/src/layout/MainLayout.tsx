@@ -3,6 +3,7 @@ import { Outlet } from 'react-router-dom'
 import LeftSidebar from './components/LeftSidebar'
 import FriendsActivity from './components/FriendsActivity'
 import AudioPlayer from './components/AudioPlayer'
+import PlaybackControls from './components/PlaybackControls'
 
 const MainLayout = () => {
 const isMobile = false
@@ -20,7 +21,9 @@ const isMobile = false
 
         {/*Main Content*/}
         <ResizablePanel defaultSize={isMobile ? 80:60}>
+            <div className="h-full overflow-y-auto pb-20 sm:pb-24">
             <Outlet />
+            </div>
         </ResizablePanel>
 
         <ResizableHandle className='w-2 bg-black rounded-lg transition-colors' />
@@ -30,6 +33,8 @@ const isMobile = false
             <FriendsActivity />
         </ResizablePanel>
         </ResizablePanelGroup>
+
+        <PlaybackControls />
     </div>
   )
 }

@@ -6,7 +6,7 @@ import { Clock, Pause, Play } from "lucide-react"
 import { useEffect } from "react"
 import { useParams } from "react-router-dom"
 
-const formatDuration = (seconds:number) => {
+export const formatDuration = (seconds:number) => {
     const minutes = Math.floor(seconds/60);
     const remainingSeconds = seconds % 60;
     return `${minutes}:${remainingSeconds.toString().padStart(2,"0")}`;
@@ -15,15 +15,13 @@ const formatDuration = (seconds:number) => {
 const AlbumPage = () => {
 
     const {albumId} = useParams()
-    const { fetchAlbumById, currentAlbum, isLoading } = useMusicStore()
+    const { fetchAlbumById, currentAlbum, isLoading,error } = useMusicStore()
     const { currentSong, isPlaying, playAlbum, togglePlay }= usePlayerStore()
 
     useEffect(() => {
         if(albumId) fetchAlbumById(albumId)
         }, [fetchAlbumById, albumId])
 
-        
-const { error } = useMusicStore();
 
 if (error) {
   return <div className="text-red-500 p-4">Error: {error}</div>;
@@ -55,10 +53,10 @@ if (error) {
     }
 
   return (
-    <div className="h-full">
-        <ScrollArea className="h-full rounded-md">
+    <div className="min-h-screen">
+        <ScrollArea className="rounded-md">
             {/*main content */}
-            <div className="relative min-h-full">
+            <div className="relative pb-[72px]">
                 {/*bg gradient*/}
                 <div
                 className="absolute inset-0 bg-gradient-to-b from-[#5038a0]/80 via-zinc-900/80 to-zinc-900 pointers-events-none rounded-md"
@@ -168,7 +166,7 @@ if (error) {
                 </div>
             </div>
         </ScrollArea>
-        AlbumPage</div>
+        </div>
   )
 }
 
