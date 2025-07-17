@@ -11,7 +11,8 @@ const songs = [
         artist: "Ed Sheeran",
         imageUrl: "/cover-images/1.jpg",
         audioUrl: "/songs/1.mp3",
-        duration: 46, // seconds
+        duration: 263, // seconds
+        durationString: "4:23"
     },
 
     {
@@ -19,7 +20,8 @@ const songs = [
         artist: "Glass Animals",
         imageUrl: "/cover-images/2.png",
         audioUrl: "/songs/2.mp3",
-        duration: 41, // seconds
+        duration: 235, // seconds
+        durationString: "3:55"
     },
 
     {
@@ -27,7 +29,8 @@ const songs = [
         artist: "The Strumbellas",
         imageUrl: "/cover-images/3.jpg",
         audioUrl: "/songs/3.mp3",
-        duration: 41, // seconds
+        duration: 212, // seconds
+        durationString: "3:32"
     },
 
     {
@@ -35,7 +38,8 @@ const songs = [
         artist: "Anupam Roy & Shreya Ghoshal",
         imageUrl: "/cover-images/4.jpg",
         audioUrl: "/songs/4.mp3",
-        duration: 42, // seconds
+        duration: 262, // seconds
+        durationString: "4:22"
     },
 
     {
@@ -43,7 +47,8 @@ const songs = [
         artist: "Ritviz",
         imageUrl: "/cover-images/5.jpg",
         audioUrl: "/songs/5.mp3",
-        duration: 42, // seconds   
+        duration: 184, // seconds
+        durationString: "3:04"   
     },
 
     {
@@ -51,7 +56,8 @@ const songs = [
         artist: "Gym Class Heroes",
         imageUrl: "/cover-images/6.jpg",
         audioUrl: "/songs/6.mp3",
-        duration: 42, // seconds 
+        duration: 216, // seconds 
+        durationString: "3:36"
     },
 
     {
@@ -59,7 +65,8 @@ const songs = [
         artist: "Fujii Kaze",
         imageUrl: "/cover-images/7.png",
         audioUrl: "/songs/7.mp3",
-        duration: 42, // seconds 
+        duration: 191, // seconds 
+        durationString: "3:11"
     },
 
     {
@@ -67,7 +74,8 @@ const songs = [
         artist: "Aditi Rao Hydari and Ali Zafar",
         imageUrl: "/cover-images/8.jpg",
         audioUrl: "/songs/8.mp3",
-        duration: 42, // seconds 
+        duration: 159, // seconds
+        durationString: "2:39" 
     },
 
     {
@@ -75,7 +83,8 @@ const songs = [
         artist: "Luminati Suns and Walk off the Earth",
         imageUrl: "/cover-images/9.jpg",
         audioUrl: "/songs/9.mp3",
-        duration: 42, // seconds 
+        duration: 163, // seconds 
+        durationString: "2:43"
     },
 
     {
@@ -83,7 +92,8 @@ const songs = [
         artist: "Sharman Joshi and Suraj Jagan",
         imageUrl: "/cover-images/10.jpg",
         audioUrl: "/songs/10.mp3",
-        duration: 42, // seconds 
+        duration: 254, // seconds
+        durationString: "4:14" 
     },
 
     {
@@ -91,7 +101,8 @@ const songs = [
         artist: "Ruth B",
         imageUrl: "/cover-images/11.png",
         audioUrl: "/songs/11.mp3",
-        duration: 42, // seconds 
+        duration: 235, // seconds 
+        durationString: "3:55"
     },
 
     {
@@ -99,7 +110,8 @@ const songs = [
         artist: "Ed Sheeran",
         imageUrl: "/cover-images/12.jpg",
         audioUrl: "/songs/12.mp3",
-        duration: 42, // seconds 
+        duration: 279, // seconds
+        durationString: "4:39" 
     },
 
     {
@@ -107,7 +119,8 @@ const songs = [
         artist: "Rashid Ali",
         imageUrl: "/cover-images/13.jpg",
         audioUrl: "/songs/13.mp3",
-        duration: 42, // seconds 
+        duration: 236, // seconds 
+        durationString: "3:56"
     },
 
     {
@@ -115,7 +128,8 @@ const songs = [
         artist: "Shubh",
         imageUrl: "/cover-images/14.jpg",
         audioUrl: "/songs/14.mp3",
-        duration: 42, // seconds 
+        duration: 159, // seconds
+        durationString: "2:39" 
     },
 
     {
@@ -123,7 +137,8 @@ const songs = [
         artist: "Guru Randhawa",
         imageUrl: "/cover-images/15.jpeg",
         audioUrl: "/songs/15.mp3",
-        duration: 42, // seconds 
+        duration: 234, // seconds
+        durationString: "3:54"
     },
 
     {
@@ -131,7 +146,8 @@ const songs = [
         artist: "Tones and I",
         imageUrl: "/cover-images/16.jpg",
         audioUrl: "/songs/16.mp3",
-        duration: 42, // seconds 
+        duration: 210, // seconds 
+        durationString: "3:30"
     },
 
     {
@@ -139,7 +155,8 @@ const songs = [
         artist: "One Direction",
         imageUrl: "/cover-images/17.png",
         audioUrl: "/songs/17.mp3",
-        duration: 42, // seconds 
+        duration: 240, // seconds 
+        durationString: "4:00"
     },
 
     {
@@ -147,7 +164,8 @@ const songs = [
         artist: "Ava Max",
         imageUrl: "/cover-images/18.png",
         audioUrl: "/songs/18.mp3",
-        duration: 42, // seconds 
+        duration: 207, // seconds 
+        durationString: "3:27"
     },
 
     {
@@ -155,7 +173,8 @@ const songs = [
         artist: "Blue",
         imageUrl: "/cover-images/19.jpg",
         audioUrl: "/songs/19.mp3",
-        duration: 42, // seconds     
+        duration: 210, // seconds
+        durationString: "3:30" 
     },
 ];
 

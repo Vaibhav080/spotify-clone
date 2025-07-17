@@ -22,7 +22,7 @@ export const createSong = async (req,res,next) => {
             return res.status(400).json({message: "Please upload all files"});
         }
 
-        const {title, artist, albumId, duration} = req.body
+        const {title, artist, albumId, duration, durationString} = req.body
         const audioFile = req.files.audioFile
         const imageFile = req.files.imageFile
 
@@ -35,6 +35,7 @@ export const createSong = async (req,res,next) => {
             audioUrl,
             imageUrl,
             duration,
+            durationString,
             albumId: albumId || null
 
         })
