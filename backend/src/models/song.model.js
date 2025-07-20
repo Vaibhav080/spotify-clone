@@ -23,7 +23,6 @@ const songSchema = new mongoose.Schema({
     },
     durationString: { 
         type: String,
-        required: true
     },  
     albumId:{
         type: mongoose.Schema.Types.ObjectId,
