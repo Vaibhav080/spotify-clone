@@ -6,14 +6,14 @@ export const getStats = async (req, res, next) => {
 
     try{
 
-        const [totalSongs, totalUsers, totalAlbums] = await Promise.all([
+        const [totalSongs, totalAlbums, totalUsers, uniqueArtists] = await Promise.all([
             Song.countDocuments(),
             Album.countDocuments(),
             User.countDocuments(),
 
             Song.aggregate([
                 {
-                    $unionwith:{
+                    $unionWith:{
                         coll: "albums",
                         pipeline:[]
                     }
@@ -26,7 +26,7 @@ export const getStats = async (req, res, next) => {
                 {
                     $count: "count",
                 },
-            ]),
+            ])
         ]);
 
         res.status(200).json({
@@ -35,7 +35,8 @@ export const getStats = async (req, res, next) => {
             totalUsers,
             totalArtists: uniqueArtists[0]?.count || 0,
         })
-    } catch(error) {
-        next(error)
+    } catch (error) {
+    console.error("🔥 Error in getStats:", error);
+    res.status(500).json({ error: "Something went wrong", details: error.message });
     }
 }
