@@ -11,7 +11,7 @@ interface AuthStore {
     reset: () => void;
 }
 
-export const useAuthStore = create((set) => ({
+export const useAuthStore = create<AuthStore>((set) => ({
 
     isAdmin: false,
     isLoading: false,
