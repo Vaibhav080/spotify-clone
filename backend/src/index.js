@@ -48,7 +48,7 @@ app.use(fileUpload({
 const tempDir = path.join(process.cwd(), "tmp")
 // cron jobs
 
-cron.schedule("0****", () => {
+cron.schedule("0 0 * * *", () => {
     if (fs.existsSync(tempDir)) {
         fs.readdir(tempDir, (err, files) => {
             if (err) {
@@ -81,9 +81,8 @@ app.use((err,req,res,next) => {
     res.status(500).json({message: process.env.NODE_ENV === "production"? "Internal Server Error" : err.message});
 })
 
-httpserver.listen(5000, ()=> {
+httpserver.listen( PORT || 5000, ()=> {
     console.log("Server is running on port "+ PORT);
     connectDB();
 });
 
-// todo: socket io for real time communication
