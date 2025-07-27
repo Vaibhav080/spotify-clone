@@ -120,7 +120,7 @@ export const useChatStore =  create<ChatStore>((set, get) => ({
         const socket = get().socket;
         if(!socket) return;
 
-        socket.emit("send message", { receiverId, senderId, content });
+        socket.emit("send_message", { receiverId, senderId, content });
     },
 
     fetchMessages: async (userId) => {
